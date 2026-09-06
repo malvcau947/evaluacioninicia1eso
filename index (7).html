@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El nuevo integrante · Evaluación inicial</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef7ff, #f8f3ff);
+    color: #17324d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .contenedor {
+    width: min(920px, 100%);
+    background: rgba(255,255,255,.96);
+    border-radius: 28px;
+    padding: 34px;
+    box-shadow: 0 14px 40px rgba(35,70,100,.16);
+    text-align: center;
+  }
+  .icono {
+    font-size: 72px;
+    margin-bottom: 6px;
+  }
+  h1 {
+    margin: 0 0 10px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+  }
+  .subtitulo {
+    font-size: 1.2rem;
+    margin: 0 auto 28px;
+    max-width: 700px;
+    line-height: 1.5;
+  }
+  .botones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .boton {
+    min-height: 125px;
+    border: 0;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform .18s, box-shadow .18s;
+    box-shadow: 0 7px 18px rgba(30,60,90,.12);
+  }
+  .boton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(30,60,90,.18);
+  }
+  .emoji { font-size: 42px; }
+  .formulario { background: #fff1b8; color: #604b00; }
+  .paso1 { background: #dff1ff; color: #124d70; }
+  .paso2 { background: #e6e1ff; color: #403574; }
+  .paso3 { background: #dff7e8; color: #245b3c; }
+  .entrega {
+    background: #ffe4ef;
+    color: #7a2448;
+    grid-column: 1 / -1;
+  }
+  .nota {
+    margin-top: 28px;
+    font-size: .98rem;
+    line-height: 1.5;
+    opacity: .82;
+  }
+  @media (max-width: 650px) {
+    .contenedor { padding: 24px 18px; }
+    .botones { grid-template-columns: 1fr; }
+    .entrega { grid-column: auto; }
+  }
+</style>
+</head>
+
+<body>
+  <main class="contenedor">
+    <div class="icono">🧩👀👂🤝</div>
+    <h1>El nuevo integrante</h1>
+    <p class="subtitulo">
+      <strong>Evaluación inicial · 1.º ESO</strong><br>
+      ¿Seréis capaces de ayudarle a integrarse en nuestra clase?
+    </p>
+
+    <div class="botones">
+      <a class="boton formulario"
+         href="https://forms.gle/u1QjFqV3GqxXWLW16"
+         target="_blank" rel="noopener">
+        <span class="emoji">📝</span>
+        <span>Cuestionario</span>
+      </a>
+
+      <a class="boton paso1" href="paso1.html">
+        <span class="emoji">👁️</span>
+        <span>Paso 1</span>
+      </a>
+
+      <a class="boton paso2" href="paso2.html">
+        <span class="emoji">👂</span>
+        <span>Paso 2</span>
+      </a>
+
+      <a class="boton paso3" href="paso3.html">
+        <span class="emoji">🤝</span>
+        <span>Paso 3</span>
+      </a>
+
+      <a class="boton entrega" href="entrega.html">
+        <span class="emoji">📤</span>
+        <span>¿Cómo entregamos las soluciones?</span>
+      </a>
+    </div>
+
+    <p class="nota">
+      Trabajad en equipo, leed con atención y no os adelantéis a la información de cada paso.
+    </p>
+  </main>
+</body>
+</html>
